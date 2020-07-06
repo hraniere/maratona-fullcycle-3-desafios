@@ -1,0 +1,9 @@
+{% if aulas %}
+<ul>
+  {% for aula in aulas %}
+  <li>{{ aula.nome }}</li>
+  {% endfor %}
+</ul>
+{% else %}
+<p>Nenhuma aula disponível</p>
+{% endif %}
